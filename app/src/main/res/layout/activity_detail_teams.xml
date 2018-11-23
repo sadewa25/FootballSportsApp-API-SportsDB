@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".menu.teams.detailteams.DetailTeamsActivity">
+
+    <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:fitsSystemWindows="true"
+            android:layout_height="250dp"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:fitsSystemWindows="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:contentScrim="?attr/colorPrimary">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                <ImageView
+                        android:layout_width="100dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/detail_logo"
+                        android:padding="@dimen/small_dimens"
+                        android:layout_margin="@dimen/small_dimens"
+                        android:src="@mipmap/ic_launcher"
+                        android:contentDescription="@string/detail_logo_team"
+                        android:layout_height="100dp"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:id="@+id/detail_name_team"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:textAlignment="center"
+                        android:id="@+id/detail_formed_year"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:textAlignment="center"
+                        android:id="@+id/detail_stadium"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_detail_teams"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_anchor="@id/app_bar"
+            app:layout_anchorGravity="bottom|end"
+            app:srcCompat="@drawable/ic_add_to_favorites"/>
+
+</android.support.design.widget.CoordinatorLayout>

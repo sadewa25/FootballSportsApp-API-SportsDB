@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tab_layout" type="id"/>
+    <item name="view_pager" type="id"/>
+    <item name="item_tgl" type="id"/>
+    <item name="item_home" type="id"/>
+    <item name="item_away" type="id"/>
+    <item name="item_home_score" type="id"/>
+    <item name="item_away_score" type="id"/>
+    <item name="item_linear" type="id"/>
+    <item name="teams_logo" type="id"/>
+    <item name="teams_title" type="id"/>
+    <item name="players_photo" type="id"/>
+    <item name="players_name" type="id"/>
+    <item name="players_position" type="id"/>
+</resources>
